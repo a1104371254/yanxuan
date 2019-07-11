@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="css/register.css">
+    <link rel="stylesheet" href="css/reset.css">
+</head>
+
+<style>
+    label.error {
+        color: pink;
+    }
+</style>
+
+<body>
+    <div class="header">
+        <div class="center clearfix">
+            <div class="m-logo spritebg"></div>
+            <div class="rg-box">
+                "已有帐号？去
+                <a id="login-btn" style="font-size: 18px" href="login.html">登录</a>
+            </div>
+        </div>
+    </div>
+    <div>
+        <div class="wrapper">
+            <div class="clearfix m-tab">
+                <div class="select left">普通账户注册</div>
+                <a class="right" id="rightBtn" href="#">靓号注册
+                    <p class="new">new</p>
+                </a>
+            </div>
+            <!-- 注册 -->
+            <div class="m-opr clearfix">
+
+                <form action="../php/register.php" method="POST" id="myform">
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="email" name="email" id="email">账户：</label>
+                        <input type="text" class="i-inpt" name="email" id="email" placeholder="网易邮箱/其他邮箱">
+                    </div>
+
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="password">密码：</label>
+                        <input type="password" class="i-inpt" id="password" name="password" placeholder="6-16位密码，区分大小写">
+                    </div>
+
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="repass" id="repass" name=" repass">确认密码：</label>
+                        <input class="i-inpt" id="repass" placeholder="再次输入密码" name="repass" type="password">
+                    </div>
+
+                    <div class="u-input firstelem">
+                        <label class="u-label" for="phone" id="phone" name="phone">手机号：</label>
+                        <input class="i-inpt" id="phone" name="phone" placeholder="11位手机号">
+                    </div>
+
+                    <div class="u-input" style="height: 58px;">
+                        <label class="u-label">&nbsp;</label>
+
+                        <input class="b-btn btn-reg btn-red" id="btn-register" type="submit" name="submit" value="注&nbsp;&nbsp;册">
+                    </div>
+
+                    <div class="u-tips">
+                        <label class="u-label">&nbsp;</label>
+                        <span class="tip">
+                            <span class="m-agree"><input type="checkbox" class="u-agree"></span>
+                        <span style="margin-left: 10px;">用户勾选即代表同意</span>
+                        <a href="http://reg.163.com/agreement.shtml" target="_blank">《网易邮箱服务条款》</a> 和
+                        <a href="http://reg.163.com/agreement_game.shtml" target="_blank">《网易隐私政策》</a></span>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+    <!-- 尾部 -->
+    <div class="footer">
+        <div class="center">
+            <div class="m-cp">
+                <p>
+                    <a href="http://corp.163.com/eng/about/overview.html" target="_blank">About NetEase</a>-<a href="http://gb.corp.163.com/gb/about/overview.html" target="_blank">公司简介</a>-<a href="http://gb.corp.163.com/gb/contactus.html" target="_blank">联系方式</a>-
+                    <a href="http://reg.163.com/help/help_oauth2.html?v=20141215" target="_blank">OAuth2.0认证</a>-<a href="http://corp.163.com/gb/job/job.html" target="_blank">招聘信息</a>-<a href="http://help.163.com/" target="_blank">客户服务</a>-<a href="http://gb.corp.163.com/gb/legal.html"
+                        target="_blank">相关法律</a>-<a href="http://emarketing.biz.163.com/" target="_blank">网络营销</a>
+                    <p>网易公司版权所有 ©1997-2019</p>
+                </p>
+            </div>
+        </div>
+    </div>
+    <script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
+    <script src="script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
+    <script type="text/javascript">
+        //表单验证-用户名
+        $(function() {
+            $('#myform').validate({
+                rules: {
+                    username: {
+                        required: true,
+                        minlength: 2,
+                        maxlength: 20,
+                        remote: { //将前端的name给后端
+                            url: "../php/register.php", //后台处理程序
+                            type: "post" //数据发送方式
+                        }
+                    },
+                    password: {
+                        required: true,
+                        minlength: 6,
+                        maxlength: 16,
+                    },
+                    repass: {
+                        required: true,
+                        equalTo: '#password'
+                    },
+                    email: {
+                        required: true,
+                        email: true
+                    }
+                },
+                messages: {
+                    username: {
+                        required: '用户名不能为空',
+                        minlength: '用户名不能小于2',
+                        maxlength: '用户名不能大于20',
+                        remote: '用户名已存在'
+                    },
+                    password: {
+                        required: '密码不能为空'
+                    },
+                    repass: {
+                        required: '密码重复不能为空'
+                    },
+                    email: {
+                        required: '电子邮箱不能为空',
+                        email: '你输入的格式有误'
+                    }
+                }
+
+            });
+        });
+
+        $.validator.setDefaults({
+            /*添加校验成功后的执行函数--修改提示内容，并为正确提示信息添加新的样式(默认是valid)*/
+            success: function(label) {
+                label.text('√').css('color', 'green').addClass('valid');
+            }
+        });
+    </script>
+
+</body>
+
+</html>

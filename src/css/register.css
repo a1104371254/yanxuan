@@ -1,0 +1,215 @@
+.clearfix::after {
+  content: '';
+  display: block;
+  height: 0;
+  clear: both;
+  visibility: hidden;
+  overflow: hidden;
+}
+body {
+  background: #efefef;
+}
+body .header {
+  width: 100%;
+  height: 130px;
+}
+body .header .center {
+  width: 1000px;
+  margin: 0 auto;
+}
+body .header .center .spritebg {
+  background: url(../img/sprite.png) no-repeat;
+}
+body .header .center .m-logo {
+  float: left;
+  width: 300px;
+  height: 60px;
+  background-position: -50px -18px;
+  margin-top: 35px;
+}
+body .header .center .rg-box {
+  float: right;
+  font-size: 18px;
+  margin-top: 50px;
+  color: #666;
+}
+body .header .center .rg-box #login-btn {
+  text-decoration: none;
+  color: #ca5252;
+}
+body .wrapper {
+  width: 1000px;
+  height: 800px;
+  background: #fff;
+  margin: 0 auto;
+}
+body .wrapper .m-tab {
+  width: 320px;
+  margin: 0 auto;
+  padding-top: 44px;
+  padding-bottom: 24px;
+}
+body .wrapper .m-tab .select {
+  background: #ca5252;
+  border-color: #ca5252;
+  color: #fff;
+}
+body .wrapper .m-tab .left {
+  width: 158px;
+  border: solid 1px #ccc;
+  border-right: 0;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 16px;
+  float: left;
+}
+body .wrapper .m-tab .right {
+  display: block;
+  width: 158px;
+  border: solid 1px #ccc;
+  border-left: 0;
+  height: 38px;
+  line-height: 38px;
+  text-align: center;
+  font-size: 16px;
+  float: right;
+  position: relative;
+}
+body .wrapper .m-tab .new {
+  position: absolute;
+  font-size: 9px;
+  color: #fff;
+  background: #ca5252;
+  height: 12px;
+  line-height: 9px;
+  width: 26px;
+  top: 4px;
+  border-radius: 2px;
+  right: 12px;
+}
+body .wrapper .m-opr {
+  height: 620px;
+  margin-top: 0;
+}
+body .wrapper .m-opr .firstelem {
+  overflow: visible;
+  z-index: 12;
+}
+body .wrapper .m-opr .u-input {
+  position: relative;
+  float: left;
+  height: 72px;
+  width: 100%;
+}
+body .wrapper .m-opr .u-input .b-btn {
+  float: left;
+  border: 0;
+  width: 322px;
+  height: 46px;
+  margin-top: 12px;
+  background-color: #ca5252;
+  text-align: center;
+  font-size: 18px;
+  color: #fff;
+  line-height: 46px;
+  cursor: pointer;
+}
+body .wrapper .m-opr .u-input .u-label {
+  float: left;
+  width: 340px;
+  text-align: right;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 45px;
+  color: #333;
+}
+body .wrapper .m-opr .u-input .i-inpt {
+  float: left;
+  height: 44px;
+  width: 280px;
+  padding-right: 40px;
+  margin-top: 12px;
+  border: solid 1px #ddd;
+  font-size: 16px;
+  text-indent: 0.5em;
+}
+body .wrapper .m-opr .u-input .smsize {
+  width: 150px;
+}
+body .wrapper .m-opr .u-input .btn-getsms {
+  float: left;
+  height: 46px;
+  width: 120px;
+  font-size: 16px;
+  line-height: 46px;
+  margin: 12px 0 0 10px;
+  color: #fff;
+  background: #2c82ff;
+  text-align: center;
+}
+body .wrapper .m-opr .u-tips .u-label {
+  float: left;
+  width: 340px;
+  text-align: right;
+  margin-top: 12px;
+  font-size: 16px;
+  line-height: 45px;
+  color: #333;
+}
+body .wrapper .m-opr .u-tips a {
+  line-height: 18px;
+}
+body .wrapper .m-opr .u-tips .tip {
+  margin-top: 10px;
+  color: #b1b1b1;
+  float: left;
+  width: 322px;
+  font-size: 12px;
+}
+body .wrapper .m-opr .u-tips .tip .m-agree {
+  display: block;
+  float: left;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+  border: solid 1px #aaa;
+  color: #999;
+  font-size: 12px;
+  background: url(../img/sprite.png) -9999px -9999px no-repeat;
+}
+body .wrapper .m-opr .u-tips .tip .m-agree .u-agree {
+  cursor: pointer;
+  float: left;
+  width: 14px;
+  height: 14px;
+  line-height: 20px;
+  border: 1px solid #ccc;
+  background: #fff;
+  opacity: 0;
+}
+body .footer {
+  width: 100%;
+  height: 106px;
+}
+body .footer .center {
+  width: 500px;
+  margin: 0 auto;
+}
+body .footer .center .m-cp {
+  padding: 30px 0;
+}
+body .footer .center .m-cp p {
+  color: #b1b1b1;
+  padding-bottom: 10px;
+  text-align: center;
+  font: 12px "Microsoft YaHei", "微软雅黑", "宋体", helvetica, "Hiragino Sans GB";
+}
+body .footer .center .m-cp p a {
+  padding: 0 6px;
+  color: #b1b1b1;
+}
+body .footer .center .m-cp p p {
+  padding-bottom: 10px;
+  text-align: center;
+}

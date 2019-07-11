@@ -1,0 +1,69 @@
+@charset "UTF-8";
+
+/* body {
+    font: 14px/1.5 "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", "Hiragino Sans GB", "Heiti SC", "WenQuanYi Micro Hei", sans-serif;
+    color: #333;
+    background-color: #fff;
+} */
+
+
+body,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+div,
+table,
+li,
+ul,
+tr,
+ol,
+dl,
+dd,
+input,
+fieldset,
+legend,
+textarea {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.clear::after {
+    content: "";
+    display: block;
+    clear: both;
+    overflow:hidden;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+em,
+i,
+b,
+strong {
+    font-weight: normal;
+    font-style: normal;
+}
+
+.left {
+    float: left
+}
+
+.right {
+    float: right;
+}

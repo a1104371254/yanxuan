@@ -1,0 +1,72 @@
+.banner {
+    height: 419px;
+    overflow: hidden;
+    position: relative;
+}
+
+.banner ul {
+    position: absolute;
+}
+
+.banner ul li {
+    float: left;
+}
+
+.banner ul li img {
+    width: 1920px;
+    height: 420px;
+}
+
+.banner .slick-dots {
+    position: absolute;
+    bottom: 4px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    list-style: none;
+    text-align: center;
+}
+
+.banner .slick-dots li {
+    position: relative;
+    display: inline-block;
+    width: 8px;
+    height: 8px;
+    margin: 0 8px 10px;
+    padding: 0;
+    cursor: pointer;
+    z-index: 333;
+    background: #fff;
+    border-radius: 50%;
+}
+
+.banner .wrap {
+    width: 1090px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.banner .wrap #left,
+.banner .wrap #right {
+    position: absolute;
+    z-index: 9;
+    top: 180px !important;
+    width: 50px;
+    height: 50px;
+    cursor: pointer;
+    opacity: 80;
+    background-color: #D0C4AF;
+    border-radius: 500px;
+    outline: none;
+    background: #D0C4AF url(../img/hxm_yanxuan-web_p_20150730_style_img_x1_icon-normal-s33e647f656-a21248af33.png) 0px -2561px;
+}
+
+.banner .wrap #right {
+    right: 0;
+    transform: rotate(180deg);
+}
+
+.active {
+    box-shadow: 0 0 0 2px rgba(7, 17, 27, 0.4) inset;
+    background-color: #ffffff;
+}

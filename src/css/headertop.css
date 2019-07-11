@@ -1,0 +1,348 @@
+.ComponentTop {
+    height: 176px;
+}
+
+.ComponentTop .wrap {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.ComponentTop .m-top {
+    height: 36px;
+    line-height: 36px;
+    background-color: #333;
+}
+
+.ComponentTop .m-top .m-siteNav {
+    width: 1090px;
+    margin: 0 auto;
+}
+
+.ComponentTop .m-top .m-siteNav ul>li {
+    height: 36px;
+    float: left;
+    margin-right: 10px;
+}
+
+.ComponentTop .m-top .m-siteNav ul>li a {
+    text-decoration: underline;
+    color: #b4a078;
+    font-size: 12px;
+}
+
+.ComponentTop .m-top .m-siteNav ul>li a:hover {
+    color: #fff;
+    text-decoration: none;
+}
+
+.ComponentTop .m-top .m-siteNav ul>li>span {
+    background: url(../img/d132c2561f18f1149d566a60d05fd9b7.gif) no-repeat center center;
+    display: block;
+    width: 14px;
+    height: 100%;
+    cursor: pointer;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row .cp-row {
+    width: 78px;
+    height: 36px;
+    float: left;
+    margin-left: 10px;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row a {
+    color: #ccc;
+    font-size: 12px;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul {
+    float: right;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx .xiazai {
+    padding: 10px 0 0 0;
+    width: 139px;
+    height: 157px;
+    background: #fff;
+    border: 1px solid #5c5c5c;
+    position: absolute;
+    top: 36px;
+    right: 72px;
+    z-index: 444;
+    display: none;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx .xiazai img {
+    display: block;
+    margin: 0 auto;
+    width: 117px;
+    height: 117px;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx .xiazai .sfsdf {
+    text-align: center;
+    color: #B4A078;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul .lx:hover .xiazai {
+    display: block;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row .emy {
+    display: inlie-block;
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+    float: left;
+    margin-top: 10px;
+    padding: 0px 8px;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row li:last-child:hover {
+    color: red;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row ul>li>a {
+    text-decoration: none;
+}
+
+.ComponentTop .m-top .m-siteNav .yx-cp-row a:hover {
+    color: #fff;
+}
+
+.ComponentTop .funcTab {
+    background-color: #fff;
+    box-shadow: 0 0 3px 0 rgba(0, 0, 0, 0.2);
+}
+
+.ComponentTop .funcTab .wrap {
+    position: relative;
+    height: 140px;
+}
+
+.ComponentTop .funcTab .wrap .logo {
+    background: url(../img/yanxuan-component_p_20.png) no-repeat 0 -194px;
+    width: 240px;
+    height: 60px;
+    background-size: 50%;
+    position: absolute;
+    top: 24px;
+    left: 0;
+}
+
+.ComponentTop .funcTab .wrap .search {
+    width: 530px;
+    height: 36px;
+    font-size: 12px;
+    position: relative;
+    top: 26px;
+    left: 358px;
+}
+
+.ComponentTop .funcTab .wrap .search .seamin {
+    background: url(../img/yanxuan-component_p_20.png) -183px -1496px;
+    width: 40px;
+    height: 30px;
+    background-size: 100px;
+    position: absolute;
+    left: 0px;
+    top: 0px;
+}
+
+.ComponentTop .funcTab .wrap .search input {
+    box-sizing: border-box;
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 1;
+    display: block;
+    height: 38px;
+    line-height: 38px;
+    padding-top: 2px;
+    padding-bottom: 2px;
+    border: 1px solid #B4A078;
+    border-bottom-left-radius: 19px;
+    border-top-left-radius: 19px;
+    font-size: 14px;
+    width: 442px;
+    padding-left: 38px;
+    overflow: hidden;
+    background: 0 0;
+    outline: none;
+    float: left;
+}
+
+.ComponentTop .funcTab .wrap .search .searchword {
+    position: absolute;
+    top: 11px;
+    left: 43px;
+}
+
+.ComponentTop .funcTab .wrap .search .searchbutton {
+    width: 90px;
+    height: 38px;
+    background-color: #B4A078;
+    border-top-right-radius: 19px;
+    border-bottom-right-radius: 19px;
+    cursor: pointer;
+    float: right;
+    color: #fff;
+    line-height: 38px;
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 1px;
+    outline: none;
+}
+
+.ComponentTop .funcTab .wrap .search .searchbutton:hover {
+    background: #C2AE8D;
+    cursor: pointer;
+}
+
+.ComponentTop .funcTab .wrap .shcar {
+    box-sizing: border-box;
+    cursor: pointer;
+    width: 134px;
+    height: 38px;
+    border: 1px solid #B4A078;
+    border-radius: 19px;
+    padding: 8px 0;
+    float: right;
+    position: absolute;
+    right: -19px;
+    top: 36px;
+}
+
+.ComponentTop .funcTab .wrap .shcar .car {
+    background: url(../img/yanxuan-component_p_20.png) 0px 953px;
+    background-size: 60px;
+    width: 20px;
+    height: 20px;
+    display: inline-block;
+    margin-left: 16px;
+}
+
+.ComponentTop .funcTab .wrap .shcar span {
+    font-size: 14px;
+    margin-bottom: -4px;
+}
+
+.ComponentTop .funcTab .wrap .shcar .cc {
+    background: url(../img/yanxuan-component_p_20.png) 0px 396px;
+    display: inline-block;
+    background-size: 100px;
+    width: 30px;
+    height: 20px;
+    padding: 0px 7px;
+    color: #fff;
+}
+
+.ComponentTop .funcTab .wrap .nav {
+    margin-top: 5px;
+    font-weight: 700;
+    position: absolute;
+    height: 30px;
+    bottom: 0px;
+    width: 1150px;
+}
+
+.ComponentTop .funcTab .wrap .nav li:first-child {
+    padding-left: 0;
+}
+
+.ComponentTop .funcTab .wrap .nav li:last-child {
+    padding-right: 0;
+}
+
+.ComponentTop .funcTab .wrap .nav li:first-child a {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+.ComponentTop .funcTab .wrap .nav>.emy {
+    height: 16px;
+    border-left: 1px solid #5c5c5c;
+    vertical-align: middle;
+    float: left;
+    margin-top: 2px;
+}
+
+.ComponentTop .funcTab .wrap .nav>li {
+    float: left;
+    font-size: 14px;
+    padding: 0 25px;
+}
+
+.ComponentTop .funcTab .wrap .nav>li>a {
+    color: #000;
+    padding-bottom: 7px;
+}
+
+.ComponentTop .funcTab .wrap .nav>li>a:hover {
+    color: #b4a078;
+    border-bottom: 3px solid #b4a078;
+}
+
+.ComponentTop .funcTab .wrap .nav>li:hover .subnav {
+    display: block;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav {
+    box-sizing: border-box;
+    width: 1202px;
+    padding: 14px 20px 20px;
+    background: #fff;
+    height: 402px;
+    position: absolute;
+    top: 30px;
+    left: -55px;
+    border: 1px solid rgba(0, 0, 0, 0.1);
+    display: none;
+    z-index: 100;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav dl {
+    float: left;
+    margin-right: 16px;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav dl dt {
+    color: #333333 !important;
+    max-width: 124px;
+    width: 124px;
+    display: inline-block;
+    margin-bottom: 10px;
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 36px;
+    border-bottom: 1px solid #ddd;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav dl dd {
+    width: 125px;
+    margin-left: 4px;
+    font-size: 14px;
+    vertical-align: middle;
+    line-height: 1.2;
+    overflow: hidden;
+    word-wrap: break-word;
+    font-weight: normal !important;
+    position: relative;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav dl dd img {
+    width: 50px;
+    height: 50px;
+    vertical-align: middle;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav dl dd span {
+    font-size: 14px;
+    vertical-align: middle;
+    word-wrap: break-word;
+    text-align: center;
+}
+
+.ComponentTop .funcTab .wrap .nav>li .subnav dl dd span:hover {
+    color: #b4a078;
+}
