@@ -1,21 +1,11 @@
 <?php
-header('content-type:text/html;charset="utf-8"');
-
-$mysql_conf = array(
-	'HOST'=>'localhost:3306',
-	'USERNAME'=>'root',
-	'PASSWORD'=>'',
-	'db'=>'yanxuan'
-);
-$mysqli = @new mysqli($mysql_conf['HOST'],$mysql_conf['USERNAME'],$mysql_conf['PASSWORD']);
-
-if($mysqli->connect_errno){
-	die('连接错误'.$mysqli->connect_errno);
-}
-
-$mysqli->query("set names 'utf8';");  
-$select_db = $mysqli->select_db($mysql_conf['db']);
-if(!$select_db){
-	die('选择数据库错误'.$mysqli->error);
-}
-?>
+header('content-type:text/html;charset=utf-8');
+define('HOST','localhost');
+define('USERNAME','root');
+define('PASSWORD','');
+define('DBNAME','yanxuan');
+$mysqli=@new mysqli(HOST,USERNAME,PASSWORD,DBNAME);
+if($mysqli->connect_error){
+	die('数据库连接失败'.$mysqli->connect_error);
+};
+$mysqli->query('SET NAMES UTF8');

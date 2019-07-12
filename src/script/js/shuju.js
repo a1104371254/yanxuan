@@ -1,7 +1,7 @@
 $(function() {
     $.ajax({
         type: "GET",
-        url: "http://localhost/yanxuan/php/details.php",
+        url: "http://10.31.158.56/yanxuan/php/details.php",
         dataType: "json",
         success: function(data) {
             // console.log(data);

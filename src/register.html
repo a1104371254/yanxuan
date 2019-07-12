@@ -92,24 +92,27 @@
     </div>
     <script src="script/js/jquery.js" type="text/javascript" charset="utf-8"></script>
     <script src="script/js/jquery.validate.js" type="text/javascript" charset="utf-8"></script>
-    <script type="text/javascript">
-        //表单验证-用户名
+    <script type="text/javascript"></script>
+    <script src="script/js/register.js" type="text/javascript" charset="utf-8"></script>
+
+
+    <script>
         $(function() {
-            $('#myform').validate({
-                rules: {
+            $('#myform').validate({ //判断是否有效
+                rules: { //规则
                     username: {
                         required: true,
                         minlength: 2,
                         maxlength: 20,
                         remote: { //将前端的name给后端
-                            url: "../php/register.php", //后台处理程序
-                            type: "post" //数据发送方式
+                            url: "../php/login.php ", //后台处理程序
+                            type: "post " //数据发送方式
                         }
                     },
                     password: {
                         required: true,
                         minlength: 6,
-                        maxlength: 16,
+                        maxlength: 15,
                     },
                     repass: {
                         required: true,
@@ -149,7 +152,6 @@
             }
         });
     </script>
-
 </body>
 
 </html>

@@ -1,7 +1,7 @@
 $(function() {
     $.ajax({
         type: "GET",
-        url: "http://localhost/yanxuan/php/xinpinshoufa.php",
+        url: "http://10.31.158.56/yanxuan/php/xinpinshoufa.php",
         dataType: "json",
         success: function(data) {
             // console.log(data);
@@ -35,7 +35,7 @@ $(function() {
 $(function() {
     $.ajax({
         type: "GET",
-        url: "http://localhost/yanxuan/php/xianshigou.php",
+        url: "http://10.31.158.56/yanxuan/php/xianshigou.php",
         dataType: "json",
         success: function(data) {
             var str = "";

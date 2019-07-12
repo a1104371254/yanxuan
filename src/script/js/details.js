@@ -8,7 +8,7 @@
 
     //2.将当前的id传给后端获取对应的数据
     $.ajax({
-        url: 'http://localhost/yanxuan/php/details.php',
+        url: 'http://10.31.158.56/yanxuan/php/details.php',
         data: {
             sid: picid
         },

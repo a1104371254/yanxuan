@@ -3,6 +3,7 @@
 	
 	if(isset($_POST['email']) || isset($_POST['submit'])){
 		$email=@$_POST['email'];
+		echo $email;
 	}else{
 		exit('非法操作');
 	}
